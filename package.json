@@ -53,12 +53,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/<your-org>/dsh-modlens.git"
+        "url": "git+https://github.com/YZz-S/dsh-modlens.git"
     },
     "bugs": {
-        "url": "https://github.com/<your-org>/dsh-modlens/issues"
+        "url": "https://github.com/YZz-S/dsh-modlens/issues"
     },
-    "homepage": "https://github.com/<your-org>/dsh-modlens#readme",
+    "homepage": "https://github.com/YZz-S/dsh-modlens#readme",
     "engines": {
         "node": ">=22.19"
     },
@@ -70,7 +70,7 @@
         "@biomejs/biome": "^2.5.7",
         "@types/node": "^22.19.7",
         "@vitest/coverage-v8": "^3.2.7",
-        "typescript": "^5.9.3",
+        "typescript": "^7.0.2",
         "vite": "^6.4.3",
         "vitest": "^3.2.7"
     },

@@ -15,12 +15,10 @@ Upstream ModLens is under active development. This fork carries the `provider` p
 ## Install (DeepSeek Harness)
 
 ```bash
-npx -y @deepseek-ai/dsh plugin --profile web add dsh-modlens@3.16.6
+dsh plugin --profile web add github:YZz-S/dsh-modlens
 ```
 
 Restart dsh, then look for the `(modlens vision)` model entries and the `modlens_read_image` tool.
-
-> Before publishing, replace `dsh-modlens` and `<your-org>` with your own package name and GitHub organization.
 
 ## Configure engines
 
@@ -65,6 +63,6 @@ modlens -i image.png    # end-to-end read (spends one read)
 
 ## License
 
-MIT. Original work © 2026 Leon Liu (liustack); fork changes © 2026 `<Your Name>`. See [LICENSE](LICENSE).
+MIT. Original work © 2026 Leon Liu (liustack); fork changes © 2026 `YZz-S`. See [LICENSE](LICENSE).
 
 Upstream: <https://github.com/liustack/modlens>

@@ -53,12 +53,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/<your-org>/dsh-modlens.git"
+        "url": "git+https://github.com/YZz-S/dsh-modlens.git"
     },
     "bugs": {
-        "url": "https://github.com/<your-org>/dsh-modlens/issues"
+        "url": "https://github.com/YZz-S/dsh-modlens/issues"
     },
-    "homepage": "https://github.com/<your-org>/dsh-modlens#readme",
+    "homepage": "https://github.com/YZz-S/dsh-modlens#readme",
     "engines": {
         "node": ">=22.19"
     },

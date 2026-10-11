@@ -168,7 +168,7 @@ export function apply(ctx, config = {}) {
 // Image magic bytes for the paste route: refuse anything that is not a real
 // image before a byte touches disk. Mirrors the CLI's sniffing table
 // (src/imageInput.ts SNIFFERS) signature for signature: full PNG magic, both
-// GIF variants, and ftyp only with a known heic/heif brand 鈥?a generic BMFF
+// GIF variants, and ftyp only with a known heic/heif brand — a generic BMFF
 // (`ftypmp42`, plain video) must not be saved as an image.
 const PASTE_SNIFFS = [
   {
@@ -432,7 +432,7 @@ function registerPasteRoute(ctx, host, ownProviders) {
  *
  * Two modes (issue #29, design contributed by @zlycode01):
  * - `config.upstream` set: wrap exactly that one route, legacy behavior.
- * - unset: auto-discovery 鈥?every registered provider route carrying
+ * - unset: auto-discovery — every registered provider route carrying
  *   wrappable text-only family models gets its own `modlens-<provider>`
  *   wrapper, so a machine with several subscription packages (opencode-go,
  *   zai, ...) wraps them all instead of hand-picking one. A `discover` array
@@ -687,7 +687,7 @@ function abortableWait(promise, signal) {
  * inside tool-result content (dsh's own read_image tool nests one there).
  * The upstream adapter's rejection check recurses (issue #24), so the
  * conversion must recurse the same way or a nested image wedges the session
- * permanently 鈥?the durable log keeps the real block, and every later turn
+ * permanently — the durable log keeps the real block, and every later turn
  * re-fails on it.
  */
 function contentHasImage(blocks) {
@@ -849,7 +849,7 @@ function renderEvidence(value) {
   const lines = [value.summary]
   const text = value.ocr?.full_text?.trim()
   if (text) {
-    lines.push('', 'Transcription:', text.length > 4000 ? `${text.slice(0, 4000)}鈥 : text)
+    lines.push('', 'Transcription:', text.length > 4000 ? `${text.slice(0, 4000)}…` : text)
   }
   const uncertainty = value.uncertainty ?? []
   if (uncertainty.length > 0) {
